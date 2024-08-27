@@ -59,21 +59,5 @@ contract Templates {
     function GetTemplate(string memory name) public view returns (string[] memory) {
         require(templates[name].length > 0, "unexist");
         return templates[name];
-        // string[] memory tmpKeys = new string[](templates[name].length);
-        // uint validLen = 0;
-
-        // string[] memory rawKeys = templates[name];
-        // for (uint i = 0; i < rawKeys.length; i++) {
-        //     if (bytes(rawKeys[i]).length > 0) {
-        //         tmpKeys[validLen] = rawKeys[i];
-        //         validLen++;
-        //     }
-        // }
-
-        // string[] memory keys = new string[](validLen);
-        // for (uint i = 0; i < validLen; i++) {
-        //     keys[i] = tmpKeys[i];
-        // }
-        // return keys;
     }
 }
