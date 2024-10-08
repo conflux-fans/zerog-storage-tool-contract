@@ -1,6 +1,8 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 
+Error.stackTraceLimit = Infinity;
+
 const config: HardhatUserConfig = {
   solidity: "0.8.24",
   networks: {
@@ -15,7 +17,11 @@ const config: HardhatUserConfig = {
       accounts: [
         "7c5da44cf462b81e0b61a582f8c9b23ca78fc23e7104138f4e4329a9b2076e23",//0x26154DF6A79a6C241b46545D672A3Ba6AE8813bE
       ]
-    }
+    },
+    ecfx_shanghai: {
+      url: `http://127.0.0.1:14000`,
+      accounts: ["7c5da44cf462b81e0b61a582f8c9b23ca78fc23e7104138f4e4329a9b2076e23"],
+  }
   },
 };
 
