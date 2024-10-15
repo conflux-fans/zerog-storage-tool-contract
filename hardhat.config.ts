@@ -21,7 +21,11 @@ const config: HardhatUserConfig = {
     ecfx_shanghai: {
       url: `http://127.0.0.1:14000`,
       accounts: ["7c5da44cf462b81e0b61a582f8c9b23ca78fc23e7104138f4e4329a9b2076e23"],
-  }
+    },
+    ecfx_aws:{
+      url: `http://manager:8545/`,
+      accounts: ["7c5da44cf462b81e0b61a582f8c9b23ca78fc23e7104138f4e4329a9b2076e23"],
+    }
   },
 };
 

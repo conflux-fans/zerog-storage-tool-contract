@@ -3,7 +3,8 @@
   "scripts": {
     "compile": "npx hardhat compile",
     "test": "npx hardhat test",
-    "deploy": "npx hardhat run scripts/deploy.ts --network ecfx_test"
+    "deployAws": "npx hardhat run scripts/2_deploy_pm.ts --network ecfx_aws",
+    "deployShanghai": "npx hardhat run scripts/2_deploy_pm.ts --network ecfx_shanghai"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",

@@ -1,13 +1,10 @@
-# Sample Hardhat Project
+# 部署合约
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+部署到 aws cloud 环境
+```sh
+npm run deployAws
+```
+部署到 上海测试环境
+```sh
+npm run deployShanghai
 ```
